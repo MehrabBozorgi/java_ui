@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Part01.Home_EBook_Activity"
+    android:background="@color/colorPrimary_EBook"
+    tools:openDrawer="start"
+    android:id="@+id/drawerLayout"
+    android:layoutDirection="rtl">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/navigationView"
+        app:menu="@menu/main_book"
+        app:headerLayout="@layout/header_menu"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_baseline_menu_24"
+                        android:tint="@color/textColor_EBook"
+                        android:layout_margin="8dp"
+                        android:id="@+id/img_menu"/>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_popular"
+                        android:layout_marginTop="24dp"
+                        android:layout_below="@id/img_menu"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/bg_home_ebook"
+                        android:padding="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/textColor_EBook"
+                            android:textSize="13sp"
+                            android:text="محبوب ترین ها : "
+                            android:id="@+id/txt"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/textColor_EBook"
+                            android:textSize="12sp"
+                            android:layout_alignParentLeft="true"
+                            android:text="مشاهده همه" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/recyclerView_popular"
+                            android:layout_below="@id/txt"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_voice"
+                        android:layout_marginTop="48dp"
+                        android:layout_below="@id/layout_popular"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/bg_home_ebook_2"
+                        android:padding="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/textColor_EBook"
+                            android:textSize="13sp"
+                            android:text="کتاب های صوتی : "
+                            android:id="@+id/txt_2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/textColor_EBook"
+                            android:textSize="12sp"
+                            android:layout_alignParentLeft="true"
+                            android:text="مشاهده همه" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/recyclerView_voice"
+                            android:layout_below="@id/txt_2"/>
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="48dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColor_EBook"
+                        android:textSize="13sp"
+                        android:layout_below="@id/layout_voice"
+                        android:text="جدید ترین ها : "
+                        android:id="@+id/txt_3"/>
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="48dp"
+                        android:layout_below="@id/layout_voice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColor_EBook"
+                        android:textSize="12sp"
+                        android:layout_alignParentLeft="true"
+                        android:text="مشاهده همه" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/recyclerView_new"
+                        android:layout_below="@id/txt_3"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="8dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
