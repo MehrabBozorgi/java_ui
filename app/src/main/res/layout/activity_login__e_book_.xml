@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Part01.Login_EBook_Activity"
+    android:layoutDirection="rtl">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/book"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:alpha="0.4"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/color_other_background"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        app:cardCornerRadius="16dp">
+
+        <RelativeLayout
+            android:background="@color/color_other_background"
+            android:padding="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor_EBook"
+                android:id="@+id/txt_header"
+                android:layout_centerHorizontal="true"
+                android:text="خوش آمدید"/>
+
+
+            <LinearLayout
+                android:id="@+id/layout_login"
+                android:layout_marginTop="32dp"
+                android:layout_below="@id/txt_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <ImageView
+                       android:tint="@color/textColor_EBook"
+                       android:gravity="center"
+                       android:layout_gravity="center"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       app:srcCompat="@drawable/ic_baseline_email_24"/>
+
+                   <EditText
+                       android:paddingRight="8dp"
+                       android:layout_gravity="center"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:hint="ایمیل"
+                       android:paddingStart="24dp"
+                       android:textSize="14sp"
+                       android:gravity="right"
+                       android:background="@null"
+                       android:inputType="textEmailAddress"
+                       />
+
+               </LinearLayout>
+
+                <View
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/textColor_EBook"
+                    />
+
+                <LinearLayout
+                    android:layout_marginTop="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:tint="@color/textColor_EBook"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_baseline_lock_24"/>
+
+                    <EditText
+                        android:paddingRight="8dp"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="پسورد"
+                        android:paddingStart="24dp"
+                        android:textSize="14sp"
+                        android:gravity="right"
+                        android:background="@null"
+                        android:inputType="textPassword"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/textColor_EBook"
+                    />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="12sp"
+                android:background="@drawable/bg_btn_login"
+                android:layout_below="@id/layout_login"
+                android:layout_marginTop="64dp"
+                android:text="ورود"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:id="@+id/btn_login"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_below="@id/btn_login"
+                android:textColor="@color/textColor_EBook"
+                android:layout_marginTop="32dp"
+                android:id="@+id/txt_forget"
+                android:text="فراموشی رمز عبور؟"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="12sp"
+                android:background="@drawable/bg_btn_register"
+                android:layout_below="@id/txt_forget"
+                android:layout_marginTop="32dp"
+                android:text="ثبت نام"
+                android:textColor="@color/textColor_EBook"
+                android:textStyle="bold"
+                android:id="@+id/btn_register"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/card_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/color_other_background"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        app:cardCornerRadius="16dp">
+
+        <RelativeLayout
+            android:background="@color/color_other_background"
+            android:padding="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor_EBook"
+                android:id="@+id/txt_header_register"
+                android:layout_centerHorizontal="true"
+                android:text="ثبت نام"/>
+
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_baseline_arrow_forward_24"
+                android:tint="@color/textColor_EBook"/>
+
+
+            <LinearLayout
+                android:id="@+id/layout_register"
+                android:layout_marginTop="32dp"
+                android:layout_below="@id/txt_header_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:tint="@color/textColor_EBook"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_baseline_email_24"/>
+
+                    <EditText
+                        android:paddingRight="8dp"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="ایمیل"
+                        android:paddingStart="24dp"
+                        android:textSize="14sp"
+                        android:gravity="right"
+                        android:background="@null"
+                        android:inputType="textEmailAddress"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/textColor_EBook"
+                    />
+
+                <LinearLayout
+                    android:layout_marginTop="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:tint="@color/textColor_EBook"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_baseline_lock_24"/>
+
+                    <EditText
+                        android:paddingRight="8dp"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="پسورد"
+                        android:paddingStart="24dp"
+                        android:textSize="14sp"
+                        android:gravity="right"
+                        android:background="@null"
+                        android:inputType="textPassword"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/textColor_EBook"
+                    />
+
+                <LinearLayout
+                    android:layout_marginTop="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:tint="@color/textColor_EBook"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_baseline_phone_android_24"/>
+
+                    <EditText
+                        android:paddingRight="8dp"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="09011234567"
+                        android:paddingStart="24dp"
+                        android:textSize="14sp"
+                        android:gravity="right"
+                        android:background="@null"
+                        android:inputType="phone"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/textColor_EBook"
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/layout_register"
+                android:textSize="12sp"
+                android:background="@drawable/bg_btn_register"
+                android:layout_marginTop="64dp"
+                android:text="ثبت نام"
+                android:textColor="@color/textColor_EBook"
+                android:textStyle="bold"
+                android:id="@+id/btn_register_2"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/layout_or"
+                android:layout_marginTop="32dp"
+                android:layout_below="@id/btn_register_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <View
+                    android:layout_gravity="center"
+                    android:layout_weight="4.75"
+                    android:layout_width="0dp"
+                    android:layout_height="0.75dp"
+                    android:background="@color/textColor_EBook"
+                    />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColor_EBook"
+                    android:text="یا"/>
+
+                <View
+                    android:layout_gravity="center"
+                    android:layout_weight="4.75"
+                    android:layout_width="0dp"
+                    android:layout_height="0.75dp"
+                    android:background="@color/textColor_EBook"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:layout_below="@id/layout_or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:srcCompat="@drawable/linkedin"/>
+
+
+                <ImageView
+                    android:layout_marginRight="8dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:srcCompat="@drawable/facebook"/>
+
+                <ImageView
+                    android:layout_marginRight="8dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:srcCompat="@drawable/google"/>
+
+                <ImageView
+                    android:layout_marginRight="8dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:srcCompat="@drawable/twitter"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
