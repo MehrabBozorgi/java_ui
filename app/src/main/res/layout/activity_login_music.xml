@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Part03.LoginMusicActivity"
+    android:layoutDirection="rtl"
+    android:background="@color/background_music">
+
+    <LinearLayout
+        android:background="@drawable/bg_rel_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="32dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_color_music"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="نام کاربری"
+                android:inputType="text"
+                android:textColor="@color/text_color_music"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:paddingRight="8dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_color_music"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/text_color_music"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="رمز عبور"
+                android:inputType="textPassword"
+                android:textColor="@color/text_color_music"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:paddingRight="8dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_color_music"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="موبایل"
+                android:inputType="phone"
+                android:textColor="@color/text_color_music"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:paddingRight="8dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <io.ghyeok.stickyswitch.widget.StickySwitch
+            android:layout_marginTop="16dp"
+            android:id="@+id/sticky_switch"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="24dp"
+            app:ss_animationDuration="600"
+            app:ss_iconPadding="1dp"
+            app:ss_iconSize="22dp"
+            app:ss_leftIcon="@drawable/ic_baseline_done_all_24"
+            app:ss_rightIcon="@drawable/ic_baseline_close_24"
+            app:ss_selectedTextSize="13sp"
+            app:ss_sliderBackgroundColor="@color/background_music"
+            app:ss_switchColor="@color/colorAccent_Music"
+            app:ss_textSize="12sp"
+            app:ss_animationType="line"/>
+
+        <Button
+            android:background="@drawable/bg_btn_login_music"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:text="ثبت نام"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@color/text_color_music"/>
+
+
+        <ImageView
+            android:id="@+id/img_go"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/bg_go_home_music"
+            android:layout_gravity="left"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:rotation="180"
+            android:tint="@color/colorAccent_Music"
+            android:padding="5dp"/>
+        
+    </LinearLayout>
+    
+    
+
+
+</RelativeLayout>
