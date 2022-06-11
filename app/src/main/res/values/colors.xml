@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    //Part 01 _ EBook
+    <color name="colorPrimary_EBook">#AAD3F6</color>
+    <color name="colorPrimaryDart_EBook">#020625</color>
+    <color name="colorAccent_EBook">#218EED</color>
+    <color name="textColor_EBook">#020622</color>
+    <color name="color_other_background">#ffffff</color>
+
+
+    //Part 02 _ Food
+    <color name="colorAccent_Food">#FDCF05</color>
+    <color name="textColor_Food">#020932</color>
+    <color name="backGroundColor_food">#FDD7D7</color>
+    <color name="backGroundColor_food_other">#ffffff</color>
+
+    //Part 03 _ Music
+    <color name="text_color_music">#ffffff</color>
+    <color name="background_music">#0D0123</color>
+    <color name="colorPrimaryDark_Music">#090019</color>
+    <color name="colorAccent_Music">#FDD835</color>
+
+    //Part 04 _ Wally
+    <color name="background_wally">#080117</color>
+    <color name="colorPrimaryDark_wally">#17011C</color>
+    <color name="colorAccent_wally">#FFD000</color>
+    <color name="textColor_wally">#ffffff</color>
+    <color name="otherColor_wally">#050B2E</color>
+
+
+</resources>
