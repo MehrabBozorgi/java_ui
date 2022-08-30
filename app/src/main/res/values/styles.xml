@@ -1,0 +1,60 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    //Part 01
+    <style name="AppTheme_EBook" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_EBook</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDart_EBook</item>
+        <item name="colorAccent">@color/colorAccent_EBook</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="BottomSheet_EBook" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="BottomSheet_EBook_Layout" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheet_EBook</item>
+    </style>
+
+    //Part 02
+    <style name="AppTheme_Food" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#B30303</item>
+        <item name="colorAccent">@color/colorAccent_Food</item>
+    </style>
+
+    //Part 03
+    <style name="AppTheme_Music" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/background_music</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Music</item>
+        <item name="colorAccent">@color/colorAccent_Music</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:fontFamily">@font/font_app</item>
+        <item name="fontFamily">@font/font_app</item>
+    </style>
+
+    //Part 04
+
+    <style name="AppTheme_Wally" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/background_wally</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_wally</item>
+        <item name="colorAccent">@color/colorAccent_wally</item>
+        <item name="windowActionBar">false</item>
+
+    </style>
+
+
+
+
+</resources>
